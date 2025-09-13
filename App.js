@@ -22,13 +22,12 @@ export default function App() {
         // setCount(count - 1)
         setCount(prevCount => prevCount - 1)
     }
-    
+    console.log("App component rendered")
     return (
         <div className="counter">
             <button className="counter--minus" onClick={subtract}>–</button>
-            <div className="counter--count">
-                <h1>{count}</h1>
-            </div>
+            {/*Passing state (count) from the parent component (App) to the child component (Count) as a prop */}
+            <Count number={count}/>
             <button className="counter--plus" onClick={add}>+</button>
         </div>
     )
