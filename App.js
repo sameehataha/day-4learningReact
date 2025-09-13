@@ -26,7 +26,7 @@ export default function App() {
     return (
         <div className="counter">
             <button className="counter--minus" onClick={subtract}>–</button>
-            {/*Passing state (count) from the parent component (App) to the child component (Count) as a prop */}
+            {/*Passing state (count) from the parent component (App) to the child component (Count) as a prop  *"I FORGOT TO ADD COUNT.JS FOLDER"* */}
             <Count number={count}/>
             <button className="counter--plus" onClick={add}>+</button>
         </div>
